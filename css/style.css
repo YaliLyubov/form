@@ -1,0 +1,155 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body{
+    font-family: "Inter", sans-serif;
+}
+.status_bar{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: rgb(148,188,235);
+    background: linear-gradient(90deg, rgba(148,188,235,1) 0%, rgba(164,158,244,1) 35%, rgba(255,255,255,1) 100%);
+}
+.container{
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.status_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.time {
+    font-size: 16px;
+    font-weight: 500;
+    color: #021433;
+}
+.main{
+    padding-top: 32px;
+    padding-bottom: 40px;
+    background: rgb(148,188,235);
+    background: linear-gradient(90deg, rgba(148,188,235,1) 0%, rgba(164,158,244,1) 35%, rgba(255,255,255,1) 100%);
+}
+.logo{
+    margin: 0 auto;
+    display: block;
+     margin-bottom: 24px;
+}
+.form-block {
+    max-width: 1000px;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    padding: 24px;
+    border-radius: 10px;
+}
+.head_form {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.form_title {
+    font-size: 26px;
+    font-weight: 700;
+    background: linear-gradient(90deg, rgba(73,131,246,1) 0%, rgba(193,117,245,1) 35%, rgba(251,172,183,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+}
+.form_desc {
+    color: grey;
+    font-size: 12px;
+}
+.form_btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+.btn {
+    border: 1px solid #EFF0F6;
+    border-radius: 10px;
+    width: 100%;
+    padding: 14px 0;
+}
+.divider{
+    color: grey;
+    text-align: center;
+    position: relative;
+    margin-bottom: 24px;
+}
+.divider::after,
+.divider::before{
+    position: absolute;
+    top: 50%;
+    content: '';
+    height: 1px;
+    background: rgba(128, 128, 128, 0.795);
+    width: 43%;
+}
+.divider::after{
+  right: 0;
+}
+.divider::before{
+    left: 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.form_label {
+    font-size: 12px;
+    color: grey;
+}
+.form_control {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 12px 24px;
+    color: #1A1C1E;
+}
+.form_control::placeholder{
+    color: grey;
+}
+.pass-control{
+    background: url('../image/eye-off.svg') no-repeat ;
+    background-position: 93% center;  
+}
+.check-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.check-label {
+    font-size: 12px;
+    color: grey;
+}
+a{
+    color: #4D81E7;
+    font-size: 12px;
+}
+.form_desc {
+    text-align: center;
+}
+.btn_form{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #1D61E7;
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.btn_form:disabled{
+    opacity: 0.8;
+}
+.invalid{
+    border: 1px solid #F65454;
+}
+.valid{
+    border: 1px solid #43A470;
+}

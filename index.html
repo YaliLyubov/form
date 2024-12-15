@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма авторизации</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="status_bar">
+        <div class="container">
+            <div class="status_wrapper">
+                <span class="time">
+                    9:41
+                </span>
+                <div class="status_bar-block">
+                    <img src="./image/Mobile Signal.svg" alt="">
+                    <img src="./image/Wifi.svg" alt="">
+                    <img src="./image/Battery.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="main">
+        <div class="container">
+            <img src="./image/Logo.svg" alt="" class="logo">
+            <div class="form-block">
+                <div class="head_form">
+                    <h2 class="form_title">
+                        Get Started now
+                    </h2>
+                    <p class="form_desc">
+                        Create an account or log in to explore our app
+                    </p>
+                </div>
+
+                <div class="form_btns">
+                    <button class="btn">
+                        <img src="./image/google-icon.svg" alt="">
+                        Sign in with Google
+                    </button>
+                    <button class="btn">
+                        <img src="./image/Facebook-icon.svg" alt="">
+                        Sign in with Facebook
+                    </button>
+                </div>
+
+                <p class="divider">
+                    Or
+                </p>
+
+                <form class="form">
+                    <label for="user-name" class="form_label">
+                       First name
+                    </label>
+                    <input id="first-name" name="user-name" type="text" class="form_control" >
+                    <label for="user-last-name" class="form_label">
+                        Last name
+                     </label>
+                     <input id="last-name" name="user-last-name" type="text" class="form_control" >
+                    <label for="email" class="form_label">
+                        Email
+                    </label>
+                    <input id="email" name="email" type="email" class="form_control" placeholder="Loisbecket@gmail.com">
+                    <label for="pass" class="form_label">
+                        Password
+                    </label>
+                    <input id="password" name="pass" type="password" 
+                    class="form_control pass-control" 
+                    placeholder="Пароль содержит цифры, буквы(заглавные и строчные) и спец символы">
+                    <label for="pass-confirm" class="form_label">
+                        Password
+                    </label>
+                    <input id="password-confirm" name="pass-confirm" type="password" class="form_control pass-control" 
+                    placeholder="Повторите пароль">
+                    <label for="birth-day" class="form_label">
+                       Birthday
+                    </label>
+                    <input id="birth-day" name="birth-day" type="date" class="form_control" >
+                    <button  id="form-button" class="btn_form" >
+                        Log In
+                    </button>
+
+                    <p class="form_desc">
+                        Don’t have an account?
+                        <a href="#">
+                            Sign Up
+                        </a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
